@@ -1,0 +1,13 @@
+rcm_loader_one_plus_v2_(white_box)
+
+Firmware v2.02
+
+Change log:
+Fix the problem that the new version of hekate v5.6.0 payload cannot be injected.
+
+1.Download the firmware upgrade tool.
+2.Unzip the firmware upgrade tool.
+3.Run the upgrade tool(Windows): RCMloader one plus update tool v2.02
+4.Click and tick “auto download”.
+5.Press the key “+” of the RCMloader while inserting the USB data cable, the LED of RCMloader flashes blue and green alternately, and the RCMloader enters the upgrade mode.
+6.Wait until the upgrade is successful, the blue upgrade progress is 100%, and “pass” is displayed above the software, then the injector upgrade is successful.

@@ -1,0 +1,10 @@
+rcm_loader_one_v1_(transparent_box)
+
+Firmware update instruction
+
+1.Download the firmware file first from: http://www.xkit.xyz/...mware_v1.2.zip 
+2.Unzip the firmware file.
+3.Connect the RCMloader one to your Computer via the MicroUSB cable.
+4.Copy the IAP folder to the root of USB drive.The file like this, USB DRIVE:\IAP\FIRMWARE.BIN.
+5.Un-plug the MicroUSB cable.
+6.Plug the MicroUSB cable again, the RCMloader will auto upgrade in 3 seconds, then the IAP folder in USB DRIVE should be auto deleted.

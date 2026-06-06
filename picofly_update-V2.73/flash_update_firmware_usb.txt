@@ -1,0 +1,23 @@
+Flashing your PicoFly, An Overview
+
+At the heart of all the dev boards is an SoC (System on a Chip) known as the RP2040. It has its own built-in firmware flashing system that involves it presenting itself to your computer as a USB drive.
+
+If it has never been programmed before, simply plugging it into your computer should bring up a window with two files in it. This is the firmware flashing window.
+
+If you drag and drop a ".uf2" file into this window, the RP2040 will read the file and attempt to flash it. This will cause the window to close, and the next time you plug the RP2040 in, it will not present itself as a USB drive to your PC.
+
+To reprogram an already-programmed RP2040, there is typically a "boot" button that needs to be held down while being plugged into USB, but when you do this and the window shows up, your firmware file will not be displayed in the window since it IS NOT a storage device. The RP2040 just tricks your computer into treating it like a storage device. Some recommend that between flashes you use a "flash_nuke.uf2" provided by the Raspberry Pi Foundation. This basically just flashes all zeroes to the RP2040 firmware memory to ensure a clean flash of whatever you put on it next.
+
+We want to flash our device with Rehius' most up-to-date PicoFly firmware, which can be located at GBAtemp:
+
+https://gbatemp.net/threads/picofly-a-hwfly-switch-modchip.622701/page-78#post-10090767
+
+As of the current date (4-06-2023), "fw_2.74.uf2" is what needs to be flashed to your dev board. Remove the .pdf from the end of the file before flashing.
+
+With this file downloaded, and your RP2040-Zero plugged into your PC, showing the firmware flashing window, keep one eye on the LED of your RP2040-Zero. As you drop the .uf2 file into the window, your LED should flash as the window on your PC closes. This is to indicate firmware flashing success, but the color of this LED is what we are concerned with now.
+
+If the LED flashes Yellow once, GREAT, you don't need to do anything special, however, if you get multiple flashes, or no flash at all, the flash was unsuccessful and you need to attempt flashing the firmware once again.
+
+You can hold the boot button, plug your RP2040-Zero back into your computer, flash the .uf2 to the board again and look for a Yellow LED flash now.
+
+At this point, with a firmware loaded on the board, we can start to prep it to go into the switch.

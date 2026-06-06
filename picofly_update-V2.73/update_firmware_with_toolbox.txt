@@ -1,0 +1,27 @@
+********************
+WARNING: NEVER USE PICOFLY TOOLBOX ON A CHIP RUNNING FIRMWARE LOWER THAN 2.6
+********************
+
+
+Little citation:
+
+"You just need to dowload the "update.bin" put it in the root of your sd then download the picofly toolbox and put it in bootloader/payloads once thats done you just go to hekate and select the toolbox as a payload to inject a menu will pop up and you just select "update" on the firmware tab, the chip updates itself and flashes itself, your switch reboots and you're golden."
+
+
+PicoFly Toolbox
+
+"picofly_toolbox_0.2.bin" (available from Rehius' post where the firmware is downloaded from) is the current payload that you can load through Hekate's payload launcher, to interface with your PicoFly. The caveat to this, is that you must be on at least firmware v2.6 to use the toolbox as a feature. This means, if you have previously loaded your PicoFly with an out-of-date firmware, like the frequently circulated "2.5 toshiba + unlock", you must flash at least 2.6 to your PicoFly via USB and a computer before you can interact with PicoFly using the toolbox.
+
+Once you are on minimum v2.6, you can launch the toolbox to its main menu.
+
+You can use Vol +/- to navigate up and down the menu, and then press the power button to select a menu option.
+
+
+Updating
+
+To actually use the tool to update your picofly from V2.6+ to something higher, simply place the desired firmware's ".bin" update in the root of your SD card and name it "update.bin". Launch PicoFly Toolbox, then scroll down once to "Update" by hitting "Vol -" one time, then hit the power button once. The toolbox will now look for the "update.bin" where it is supposed to be, and will flash the firmware provided inside the file. You will be asked to reboot, and may experience slightly longer boot times for the first few boots after updating. This is normal, once the PicoFly re-trains, you will be back to fast boots.
+
+
+Rolling Back
+
+PicoFly stores the last firmware you flashed from, in the event of a failed flash, it can auto-rollback to whatever version you were flashing from. If in the event you have a successful flash to a higher version, but wish to intentionally rollback to your previously running version, from the main menu of PicoFly Toolbox, scroll down twice with the Vol - button being pressed twice, then select Rollback with the power button. Similar to an update, you will be asked to reboot.
