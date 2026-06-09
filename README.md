@@ -16,6 +16,7 @@ Most users only need one folder depending on their setup.
 
 This pack is intended to centralize files that are often spread across forums, GitHub repositories, and community resources.
 
+---
 
 ## Folder Guide
 
@@ -27,6 +28,7 @@ Use this folder if you want to inject payloads from an Android device.
 
 Install the included APK and follow the application instructions.
 
+---
 
 ### TegraRcmGUI_v2.6_portable
 
@@ -34,17 +36,24 @@ Windows payload injector.
 
 Use this folder if you want to inject payloads from a Windows PC.
 
-Includes the required APX drivers and payload injection tools.
+Includes:
 
+- APX drivers
+- Payload injection tools
+
+Follow the included documentation for installation and usage instructions.
+
+---
 
 ### hekate_ctcaer_6.4.2_Nyx_1.8.2
 
-Latest included Hekate release.
+Included Hekate release.
 
-Use this folder to update or replace an existing Hekate installation.
+Use this folder to install, update, or replace an existing Hekate installation.
 
 Refer to the included files and documentation for detailed instructions.
 
+---
 
 ### payload
 
@@ -54,6 +63,14 @@ payload.bin
 
 Use this payload when a guide or tool requests a payload file to inject.
 
+This file can be used with compatible payload injectors such as:
+
+- Rekado
+- TegraRcmGUI
+- RCM Loader
+- PicoFly Toolbox
+
+---
 
 ### picofly_update-V2.73
 
@@ -69,6 +86,9 @@ Includes:
 
 Refer to the included documentation for detailed instructions.
 
+Use this folder when updating an existing PicoFly installation.
+
+---
 
 ### rcm_loader_update
 
@@ -83,6 +103,7 @@ Choose the folder matching your hardware version.
 
 The required update files and instructions are included.
 
+---
 
 ### sd_utils
 
@@ -102,6 +123,57 @@ SD Card Formatter can help restore a clean SD card structure before formatting.
 
 guiformat is commonly used to format large SD cards as FAT32 for Nintendo Switch homebrew usage.
 
+---
+
+## Typical Use Cases
+
+### I want to inject a payload from Android
+
+Use:
+
+Rekado_5.4.120
+
+---
+
+### I want to inject a payload from Windows
+
+Use:
+
+TegraRcmGUI_v2.6_portable
+
+---
+
+### I want to update Hekate
+
+Use:
+
+hekate_ctcaer_6.4.2_Nyx_1.8.2
+
+---
+
+### I want to update PicoFly
+
+Use:
+
+picofly_update-V2.73
+
+---
+
+### I want to update an RCM Loader
+
+Use:
+
+rcm_loader_update
+
+---
+
+### I want to prepare a microSD card
+
+Use:
+
+sd_utils
+
+---
 
 ## Notes
 
@@ -113,6 +185,11 @@ Several folders include their own documentation and guides.
 
 Refer to the documentation included with each tool for detailed usage instructions.
 
+Version numbers may change in future releases, but the folder purposes remain the same.
+
+This repository is intended as a convenience pack that centralizes commonly used Nintendo Switch files and utilities.
+
+---
 
 ## Credits
 
